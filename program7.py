@@ -1,5 +1,8 @@
-s=input("Enter a word: ") 
-c=s[0]
-str1=s.replace(s[0],'$')	
-r=c+str1[1:]
-print (r )
+def modifyStr(str1):
+    if str1.endswith("ing"):
+        return str1 + "ly"
+    else:
+        return str1 + "ing"
+str1 = input("Enter a string: ")
+result = modifyStr(str1)
+print(result)
